@@ -1,0 +1,9 @@
+form(method='POST' action='/new')
+          div.form-group
+            label(for='user') User:
+            input#name.form-control(type='text', placeholder='username' name='messageUser')
+          div.form-group
+            label(for='message') Message:
+            input#message.form-control(type='text', placeholder='your message' name='messageText')
+          
+          button.btn.btn-primary(type='submit') Post

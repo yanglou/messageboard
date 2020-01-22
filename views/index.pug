@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  
+  each message in messages
+    div
+    hr
+    each val, index in message
+      p= index +': ' + val
+
+  a(href="new")
+   button(type="button") create new post
